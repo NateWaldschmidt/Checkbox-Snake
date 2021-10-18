@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox Snake</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        input[type=checkbox] {
+            filter: hue-rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <h1 id="scoreboard" style="text-align: center;">Score: 1</h1>
+    <label for="game-difficulty">Difficulty</label>
+    <input id="game-difficulty" type="number" min="1" max="5" value="3"/>
+
+    <button id="btn-start" type="button">Start Game</button>
+    <button id="btn-pause" type="button">Pause Game</button>
+    <div id="gameboard"></div>
+    <div id="highscores">
+        <h2>Highscores</h2>
+        <ol>
+        </ol>
+    </div>
+</body>
+<script src="cb-snake.js"></script>
+</html>
